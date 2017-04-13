@@ -27,6 +27,7 @@ Files
 
 Current issues:
 	Super beta!
+	This isn't getting much interest at work, don't know if updates will be coming.
 	Need to make it work with multiple vlans (It currently assumes everything is on the same vlan)
 	Need to keep moving info out of doc_info into specific files.
 	Need to make the MOP prettier (Bold some stuff, and center to top part)
