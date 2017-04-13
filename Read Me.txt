@@ -1,0 +1,35 @@
+Currently super beta
+
+I had to use the docx from here http://www.lfd.uci.edu/~gohlke/pythonlibs/ to get around a bug in the code.
+
+Files
+	build_mop:  Where all the work is done.  This looks for any port that is an access port and builds the config for them.  
+	It also spits out the global config.
+	These are gotten from cli_commands.
+
+	IPs: A list of the devices you want to run this on
+	
+	doc_info:  A list of variables used to fill the MOP document.  I have been moving these out to their own files slowly.
+	
+	Objectives: The objectives for the MOP document
+	
+	Participants:  List of who is attending.
+		1st colum is just bulited
+		2nd colum is indented once
+		3ed colum is indented twice
+	
+	cli_commands: Where it stores most of the config lines used 
+		Beware the way it currently works is it spits out the data vlan between per-port config part 1 and 2.
+		
+	10.250.8.76 mop info.txt:  The commands that were spit out
+	
+	10.250.8.76 mop info.docx: The MOP that was spit out.
+
+Current issues:
+	Super beta!
+	Need to make it work with multiple vlans (It currently assumes everything is on the same vlan)
+	Need to keep moving info out of doc_info into specific files.
+	Need to make the MOP prettier (Bold some stuff, and center to top part)
+	Make it more modular
+	Making this into classes would be great!
+	
