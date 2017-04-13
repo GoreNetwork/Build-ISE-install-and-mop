@@ -1,0 +1,28 @@
+hostname cs-ISE-Lab-6506
+
+ This is the global config
+ !
+  interface Vlan  100
+ ip helper-address 10.0.0.1
+ ip helper-address 10.0.0.1
+!
+ interface Vlan 200
+ ip helper-address 10.0.0.1
+ ip helper-address 10.0.0.1
+!
+ ip dhcp snooping vlan  100,200
+ no ip dhcp snooping information option
+ ip dhcp snooping
+ !
+ interface range  GigabitEther 1/1 - 47
+ per port config part 1  100
+ per-port config part 2
+ !
+
+ interface range  GigabitEther 2/2 - 46
+ per port config part 1  100
+ per-port config part 2
+ !
+
+ end 
+wr 
